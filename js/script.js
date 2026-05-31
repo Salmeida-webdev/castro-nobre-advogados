@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const articleModal = document.getElementById("articleModal");
   const articleModalTitle = document.getElementById("articleModalTitle");
+
   const articleModalCategory = document.getElementById("articleModalCategory");
 
   const articleModalContent = document.getElementById("articleModalContent");
@@ -243,15 +244,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  let ticking = false;
+
   const handleScroll = () => {
     const scrollY = window.scrollY || document.documentElement.scrollTop;
 
     header?.classList.toggle("scrolled", scrollY > 24);
 
     backToTop?.classList.toggle("visible", scrollY > 700);
+
+    ticking = false;
   };
 
-  window.addEventListener("scroll", handleScroll, {
+  const requestScrollUpdate = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(handleScroll);
+
+      ticking = true;
+    }
+  };
+
+  window.addEventListener("scroll", requestScrollUpdate, {
     passive: true,
   });
 

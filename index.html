@@ -35,6 +35,7 @@
       href="assets/images/hero-lawyer.avif"
       type="image/avif"
       media="(min-width: 1025px)"
+      fetchpriority="high"
     />
     <link
       rel="preload"
@@ -42,6 +43,7 @@
       href="assets/images/hero-lawyer-tablet.avif"
       type="image/avif"
       media="(min-width: 641px) and (max-width: 1024px)"
+      fetchpriority="high"
     />
     <link
       rel="preload"
@@ -49,6 +51,7 @@
       href="assets/images/hero-lawyer-mobile.avif"
       type="image/avif"
       media="(max-width: 640px)"
+      fetchpriority="high"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -87,7 +90,13 @@
 
     <div class="loader" id="loader" aria-hidden="true">
       <div class="loader__mark">
-        <img src="assets/images/logo-castro-nobre-gold.png" alt="" />
+        <img
+          width="420"
+          height="160"
+          src="assets/images/logo-castro-nobre-gold.png"
+          alt=""
+          decoding="async"
+        />
       </div>
     </div>
 
@@ -99,8 +108,11 @@
           aria-label="Castro Nobre Advocacia - Início"
         >
           <img
+            width="420"
+            height="160"
             src="assets/images/logo-castro-nobre-gold.png"
             alt="Castro Nobre Advocacia"
+            decoding="async"
           />
         </a>
 
@@ -167,6 +179,9 @@
             alt="Advogado em ambiente corporativo sofisticado"
             width="1920"
             height="1080"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
           />
         </picture>
 
@@ -256,6 +271,8 @@
                 type="image/webp"
               />
               <img
+                width="1200"
+                height="1500"
                 src="assets/images/about-office.webp"
                 alt="Ambiente sofisticado do escritório Castro Nobre"
                 loading="lazy"
@@ -296,6 +313,8 @@
                   srcset="assets/images/business-law.webp"
                   type="image/webp" />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/business-law.webp"
                   alt="Direito Empresarial"
                   loading="lazy"
@@ -321,6 +340,8 @@
                   srcset="assets/images/civil-law.webp"
                   type="image/webp" />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/civil-law.webp"
                   alt="Direito Civil"
                   loading="lazy"
@@ -346,6 +367,8 @@
                   srcset="assets/images/real-estate-law.webp"
                   type="image/webp" />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/real-estate-law.webp"
                   alt="Direito Imobiliário"
                   loading="lazy"
@@ -370,6 +393,8 @@
                   srcset="assets/images/contract-law.webp"
                   type="image/webp" />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/contract-law.webp"
                   alt="Direito Contratual"
                   loading="lazy"
@@ -392,6 +417,8 @@
                   type="image/avif" />
                 <source srcset="assets/images/tax-law.webp" type="image/webp" />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/tax-law.webp"
                   alt="Direito Tributário"
                   loading="lazy"
@@ -417,6 +444,8 @@
                   srcset="assets/images/wealth-planning.webp"
                   type="image/webp" />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/wealth-planning.webp"
                   alt="Planejamento Patrimonial"
                   loading="lazy"
@@ -448,6 +477,8 @@
               type="image/webp"
             />
             <img
+              width="1200"
+              height="1500"
               src="assets/images/office-meeting.webp"
               alt="Reunião jurídica estratégica em sala premium"
               loading="lazy"
@@ -541,6 +572,8 @@
                   type="image/avif" />
                 <source srcset="assets/images/team-01.webp" type="image/webp" />
                 <img
+                  width="900"
+                  height="1100"
                   src="assets/images/team-01.webp"
                   alt="Dr. Henrique Castro"
                   loading="lazy"
@@ -556,6 +589,8 @@
                   type="image/avif" />
                 <source srcset="assets/images/team-02.webp" type="image/webp" />
                 <img
+                  width="900"
+                  height="1100"
                   src="assets/images/team-02.webp"
                   alt="Dra. Marina Nobre"
                   loading="lazy"
@@ -571,6 +606,8 @@
                   type="image/avif" />
                 <source srcset="assets/images/team-03.webp" type="image/webp" />
                 <img
+                  width="900"
+                  height="1100"
                   src="assets/images/team-03.webp"
                   alt="Dr. Rafael Azevedo"
                   loading="lazy"
@@ -605,6 +642,8 @@
                 type="image/webp"
               />
               <img
+                width="900"
+                height="620"
                 src="assets/images/testimonial-client.webp"
                 alt="Cliente corporativo atendido pela Castro Nobre"
                 loading="lazy"
@@ -649,6 +688,8 @@
                   type="image/webp"
                 />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/article-01.webp"
                   alt="Contratos empresariais estratégicos"
                   loading="lazy"
@@ -683,6 +724,8 @@
                   type="image/webp"
                 />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/article-02.webp"
                   alt="Planejamento patrimonial"
                   loading="lazy"
@@ -718,6 +761,8 @@
                   type="image/webp"
                 />
                 <img
+                  width="900"
+                  height="620"
                   src="assets/images/article-03.webp"
                   alt="Disputas societárias"
                   loading="lazy"
@@ -859,9 +904,12 @@
               rel="noopener"
             >
               <img
+                width="160"
+                height="160"
                 class="contact-card__icon"
                 src="assets/icons/icon-whatsapp-premium.png"
                 alt=""
+                decoding="async"
               />
               <span>WhatsApp</span>
               <strong>(83) 99832-6680</strong>
@@ -877,9 +925,12 @@
               rel="noopener"
             >
               <img
+                width="160"
+                height="160"
                 class="contact-card__icon"
                 src="assets/icons/icon-instagram-premium.png"
                 alt=""
+                decoding="async"
               />
               <span>Instagram</span>
               <strong>@castronobreadv</strong>
@@ -948,7 +999,13 @@
       rel="noopener"
       aria-label="Falar no WhatsApp"
     >
-      <img src="assets/icons/icon-whatsapp-premium.png" alt="" />
+      <img
+        width="160"
+        height="160"
+        src="assets/icons/icon-whatsapp-premium.png"
+        alt=""
+        decoding="async"
+      />
     </a>
 
     <button
