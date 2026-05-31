@@ -2622,3 +2622,84 @@ body.menu-open .site-header {
 }
 
 /* FIM — CORREÇÃO DEFINITIVA — ENQUADRAMENTO DE IMAGENS */
+
+/* =========================================================
+   REFINAMENTO FINAL — TIPOGRAFIA E CTA HIGH-TICKET
+   Mantém o layout atual e aplica apenas:
+   1. suavização premium de fontes em fundo escuro;
+   2. refinamento visual dos CTAs executivos.
+   ========================================================= */
+
+/* Suavização de fontes para reduzir serrilhado/estouro em fundos escuros */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+.eyebrow,
+.hero__content,
+.section__header,
+.section__copy,
+.testimonial-card blockquote {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+
+/* Evita branco estourado em serifas e textos premium */
+h1,
+h2,
+h3 {
+  color: rgba(243, 238, 229, 0.96);
+}
+
+.hero p,
+.section__copy p,
+.section__header p,
+.area-card p,
+.process-card p,
+.team-card p,
+.article-card p,
+.testimonial-card span,
+.feature-list span,
+.site-footer p {
+  color: rgba(243, 238, 229, 0.68);
+}
+
+/* CTAs com linguagem visual de atendimento institucional/executivo */
+.header__cta,
+.btn--primary {
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.btn--ghost {
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+  border-color: rgba(197, 168, 128, 0.34);
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.btn--ghost:hover {
+  border-color: rgba(197, 168, 128, 0.62);
+  background: rgba(184, 151, 101, 0.085);
+}
+
+/* Link institucional mais refinado */
+.text-link {
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.82rem;
+}
+
+/* FIM — REFINAMENTO FINAL — TIPOGRAFIA E CTA HIGH-TICKET */
