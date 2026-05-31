@@ -1,0 +1,60 @@
+{
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+
+  "explorer.compactFolders": false,
+
+  "breadcrumbs.enabled": true,
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "emmet.triggerExpansionOnTab": true,
+
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.semi": true,
+  "prettier.printWidth": 80,
+
+  "css.validate": true,
+  "scss.validate": true,
+  "less.validate": true,
+
+  "html.format.wrapLineLength": 100,
+  "html.format.indentInnerHtml": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+
+  "editor.renderWhitespace": "selection",
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  }
+}

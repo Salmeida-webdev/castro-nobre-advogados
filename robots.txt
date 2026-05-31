@@ -1,0 +1,10 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://castronobreadvogados.netlify.app/sitemap.xml
+
+Disallow: /404.html
+Disallow: /assets/private/
+
+Crawl-delay: 1
